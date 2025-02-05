@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background color changer</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Poppins sans-sarif";
+        font-weight: 500;
+      }
+
+      .color-bar {
+        position: fixed;
+        bottom: 0;
+        max-width: 90%;
+        margin: 0 auto 1rem auto;
+        border: 1px solid gray;
+        padding: 1rem;
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+      }
+
+      .color-bar_container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .color {
+        border: 1px solid gray;
+        padding: 1rem 1.5rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+
+      .black {
+        background-color: black;
+        color: wheat;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .purple {
+        background-color: purple;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .default {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-bar">
+      <div class="color-bar_container">
+        <div class="color red">Red</div>
+        <div class="color yellow">Yellow</div>
+        <div class="color black">Black</div>
+        <div class="color purple">Purple</div>
+        <div class="color green">Green</div>
+        <div class="color blue">Blue</div>
+        <div class="color default">Default</div>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
