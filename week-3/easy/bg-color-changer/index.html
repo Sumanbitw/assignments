@@ -74,15 +74,38 @@
   <body>
     <div class="color-bar">
       <div class="color-bar_container">
-        <div class="color red">Red</div>
-        <div class="color yellow">Yellow</div>
-        <div class="color black">Black</div>
-        <div class="color purple">Purple</div>
-        <div class="color green">Green</div>
-        <div class="color blue">Blue</div>
-        <div class="color default">Default</div>
+        <div class="color red" onclick="handleRedBtn()">Red</div>
+        <div class="color yellow" onclick="handleYellowBtn()">Yellow</div>
+        <div class="color black" onclick="handleBlackBtn()">Black</div>
+        <div class="color purple" onclick="handlePurpleBtn()">Purple</div>
+        <div class="color green" onclick="handleGreenBtn()">Green</div>
+        <div class="color blue" onclick="handleBlueBtn()">Blue</div>
+        <div class="color default" onclick="handleDefaultBtn()">Default</div>
       </div>
     </div>
   </body>
-  <script></script>
+  <script>
+    const body = document.body;
+    function handleRedBtn() {
+      body.style.background = "red";
+    }
+    function handleYellowBtn() {
+      body.style.background = "yellow";
+    }
+    function handleBlackBtn() {
+      body.style.background = "black";
+    }
+    function handlePurpleBtn() {
+      body.style.background = "purple";
+    }
+    function handleGreenBtn() {
+      body.style.background = "green";
+    }
+    function handleBlueBtn() {
+      body.style.background = "blue";
+    }
+    function handleDefaultBtn() {
+      body.style.background = "brown";
+    }
+  </script>
 </html>
